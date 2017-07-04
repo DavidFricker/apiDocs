@@ -59,10 +59,12 @@ $('#navInner .menu-toggle a').on('click', function (ev) {
 });
 
 
+//faster click
+$(function() {
+	FastClick.attach(document.body);
+});
 
 //scrollspy
-
-
 $(window).on("load resize scroll", function(e) {
   if($(window).width() > 768)
       {
