@@ -17,10 +17,6 @@ $(window).on("load resize scroll", function(e) {
 // Make the code beautiful
 hljs.initHighlightingOnLoad();
 
-
-
-
-
 //smoothscroll
 $('a[href^="#"]')
     .not('[href="#"]')
@@ -36,7 +32,7 @@ $('a[href^="#"]')
             if (target.length) {
                 event.preventDefault();
                 $('html, body').animate({
-                    scrollTop: target.offset().top-80
+                    scrollTop: target.offset().top
                 }, 1000, function() {
                     var $target = $(target);
                     $target.focus();

@@ -100,6 +100,24 @@ a{
     }
   }
 
+
+  &.-dark{
+    $btnDarkColor: rgba(0,0,0,1);
+    background: $btnDarkColor;
+
+    color: black;
+
+    &.-outline{
+      background: transparent;
+      border: 1px solid $btnDarkColor;
+      color: $btnDarkColor;
+      &:hover{
+        //background: transparentize($btnLightColor, 20);
+
+      }
+    }
+  }
+
 }
 
 .btnContainer{

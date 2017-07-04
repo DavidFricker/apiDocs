@@ -3568,6 +3568,13 @@ a {
       background: transparent;
       border: 1px solid white;
       color: white; }
+  .btn.-dark {
+    background: black;
+    color: black; }
+    .btn.-dark.-outline {
+      background: transparent;
+      border: 1px solid black;
+      color: black; }
 
 .btnContainer {
   display: block; }
@@ -3630,7 +3637,8 @@ body {
         -ms-flex-pack: center;
         justify-content: center; }
         .apiDocs .navMain #navInner .brand h1 {
-          margin: .8rem 0; }
+          margin: .8rem 0;
+          font-size: 2rem; }
         @media only screen and (min-width: 768px) {
           .apiDocs .navMain #navInner .brand {
             padding: 2.8rem 1.4rem 1.4rem;
@@ -3855,49 +3863,45 @@ body {
         margin-left: 0;
         margin-top: 0; } }
     .apiDocs .wrap .header {
-      padding: 8.4rem 1.4rem 5.6rem;
       display: inline-block;
       background: #FFF;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
-      @media only screen and (min-width: 768px) {
-        .apiDocs .wrap .header {
-          padding: 11.2rem 2.8rem 5.6rem; } }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      width: 100%; }
       .apiDocs .wrap .header:focus {
         outline: none; }
-      .apiDocs .wrap .header h1,
-      .apiDocs .wrap .header h3,
-      .apiDocs .wrap .header p {
-        color: white; }
+      .apiDocs .wrap .header h1 {
+        font-size: 2.8rem; }
+      .apiDocs .wrap .header h3 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-bottom: .8rem; }
       .apiDocs .wrap .header.-main {
         background: #9FA8DA;
         background: #2F2F38;
-        background: linear-gradient(to top, #4381C1, #034078); }
-      .apiDocs .wrap .header.-screenshots {
-        background: #680065;
-        background: linear-gradient(to top, #2b002a, #680065); }
-      .apiDocs .wrap .header.-emailcheck {
-        background: #8DCB9E;
-        background: linear-gradient(to top, #63b87a, #8DCB9E); }
-      .apiDocs .wrap .header.-domains {
-        background: #067858;
-        background: linear-gradient(to top, #033e2d, #067858); }
-      .apiDocs .wrap .header.-whois {
-        background: #5C828E;
-        background: linear-gradient(to top, #446069, #5C828E); }
-      .apiDocs .wrap .header.-sentiment {
-        background: #70ABAF;
-        background: linear-gradient(to top, #518d91, #70ABAF); }
-      .apiDocs .wrap .header.-geoip {
-        background: #379392;
-        background: linear-gradient(to top, #266666, #379392); }
-      .apiDocs .wrap .header h1 {
-        font-size: 3em; }
+        background: linear-gradient(to top, #4381C1, #034078);
+        padding: 8.4rem 1.4rem 2.8rem; }
+        @media only screen and (min-width: 768px) {
+          .apiDocs .wrap .header.-main {
+            padding: 16.8rem 2.8rem 5.6rem; } }
+        .apiDocs .wrap .header.-main h1,
+        .apiDocs .wrap .header.-main h3,
+        .apiDocs .wrap .header.-main p {
+          color: white; }
+      .apiDocs .wrap .header.-white {
+        background: white;
+        padding: 5.6rem 1.4rem 2.8rem; }
+        @media only screen and (min-width: 768px) {
+          .apiDocs .wrap .header.-white {
+            padding: 8.4rem 2.8rem 2.8rem; } }
+        .apiDocs .wrap .header.-white h1,
+        .apiDocs .wrap .header.-white h3,
+        .apiDocs .wrap .header.-white p {
+          color: rgba(0, 0, 0, 0.87); }
     .apiDocs .wrap .content {
       -ms-flex: 1;
       flex: 1;
       position: relative;
-      display: flow-root;
-      padding-top: 4.2rem; }
+      display: flow-root; }
       @media only screen and (min-width: 768px) {
         .apiDocs .wrap .content {
           width: calc(100%);
@@ -3911,7 +3915,7 @@ body {
         height: 4.2rem;
         width: 100%;
         padding: 0 1.4rem;
-        background: #e3e3e5; }
+        background: #e1e7f0; }
         @media only screen and (min-width: 768px) {
           .apiDocs .wrap .content .setLang {
             width: calc(50%);
@@ -3964,13 +3968,13 @@ body {
               margin-left: 0;
               padding: 4.2rem 2.8rem 2.8rem; } }
           .apiDocs .wrap .content .method .method-description code {
-            background: #ededed;
+            background: #ccd6e6;
             border-radius: 0.4rem;
             padding: 0.4rem 0.8rem; }
           .apiDocs .wrap .content .method .method-description h1 {
             margin-bottom: 0; }
           .apiDocs .wrap .content .method .method-description .badge {
-            background: #a3a3ab;
+            background: #8fa5c7;
             color: white;
             font-size: 1.4rem;
             padding: 0.2rem 0.8rem;
@@ -3978,41 +3982,52 @@ body {
             border: 1px solid rgba(0, 0, 0, 0.12);
             display: inline-block;
             vertical-align: middle; }
-          .apiDocs .wrap .content .method .method-description .info .feild {
-            display: -ms-flexbox;
-            display: flex;
-            margin-bottom: 0.8rem; }
-            .apiDocs .wrap .content .method .method-description .info .feild .key {
-              -ms-flex: 2 0 0px;
-              flex: 2 0 0;
-              text-align: right; }
-              .apiDocs .wrap .content .method .method-description .info .feild .key .response {
-                font-size: 1.4rem; }
-                .apiDocs .wrap .content .method .method-description .info .feild .key .response.-error {
-                  color: #F24236; }
-                .apiDocs .wrap .content .method .method-description .info .feild .key .response.-success {
-                  color: #00CC66; }
-                .apiDocs .wrap .content .method .method-description .info .feild .key .response.-defalt {
-                  color: rgba(0, 0, 0, 0.38); }
-              .apiDocs .wrap .content .method .method-description .info .feild .key .badge {
-                background: #a3a3ab;
-                margin-top: 0.4rem; }
-              .apiDocs .wrap .content .method .method-description .info .feild .key code {
-                font-size: 1.6rem; }
-            .apiDocs .wrap .content .method .method-description .info .feild .description {
-              -ms-flex: 3 0 0px;
-              flex: 3 0 0;
-              text-align: left;
-              padding-left: 1.4rem; }
-              .apiDocs .wrap .content .method .method-description .info .feild .description p {
-                margin-bottom: 0.2rem;
-                font-size: 1.6rem; }
+          .apiDocs .wrap .content .method .method-description .info {
+            padding: 2.8rem; }
+            .apiDocs .wrap .content .method .method-description .info .feild {
+              display: inline-block;
+              padding: .4rem 0;
+              width: 100%;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+              .apiDocs .wrap .content .method .method-description .info .feild .key {
+                width: 40%;
+                text-align: left;
+                display: inline-block;
+                float: left; }
+                .apiDocs .wrap .content .method .method-description .info .feild .key .response {
+                  font-size: 1.4rem; }
+                  .apiDocs .wrap .content .method .method-description .info .feild .key .response.-error {
+                    color: #F24236; }
+                  .apiDocs .wrap .content .method .method-description .info .feild .key .response.-success {
+                    color: #00CC66; }
+                  .apiDocs .wrap .content .method .method-description .info .feild .key .response.-defalt {
+                    color: rgba(0, 0, 0, 0.38); }
+                .apiDocs .wrap .content .method .method-description .info .feild .key .badge {
+                  background: #8fa5c7;
+                  margin-top: 0.4rem; }
+                .apiDocs .wrap .content .method .method-description .info .feild .key code {
+                  font-size: 1.6rem; }
+              .apiDocs .wrap .content .method .method-description .info .feild .description {
+                width: 60%;
+                text-align: left;
+                display: inline-block;
+                padding-left: 1.4rem;
+                float: left; }
+                .apiDocs .wrap .content .method .method-description .info .feild .description p {
+                  margin-bottom: 0.2rem;
+                  font-size: 1.6rem; }
+              .apiDocs .wrap .content .method .method-description .info .feild.-title {
+                border-bottom: 2px solid rgba(0, 0, 0, 0.12); }
+                .apiDocs .wrap .content .method .method-description .info .feild.-title .key p, .apiDocs .wrap .content .method .method-description .info .feild.-title .description p {
+                  margin-bottom: 0;
+                  font-weight: 600;
+                  font-size: 1.4rem; }
         .apiDocs .wrap .content .method .method-example {
           width: calc(100%);
           float: left;
           margin-left: 0;
           display: block;
-          background: #F3F3F4;
+          background: #F5F7FA;
           font-size: 1.6rem;
           padding: 2.8rem 1.4rem; }
           @media only screen and (min-width: 768px) {
@@ -4028,4 +4043,4 @@ body {
           .apiDocs .wrap .content .method .method-example pre {
             margin: 0; }
             .apiDocs .wrap .content .method .method-example pre .hljs {
-              background: #F3F3F4; }
+              background: #F5F7FA; }
