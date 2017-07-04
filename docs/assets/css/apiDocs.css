@@ -3731,7 +3731,7 @@ body {
         @media only screen and (min-width: 768px) {
           .apiDocs .navMain #navInner .docsNav {
             display: block;
-            padding-bottom: 10rem; } }
+            padding-bottom: 14rem; } }
         .apiDocs .navMain #navInner .docsNav .search {
           display: block;
           padding: 1.4rem; }
@@ -3995,7 +3995,7 @@ body {
                 .apiDocs .wrap .content .method .method-description .info .feild .key .response.-defalt {
                   color: rgba(0, 0, 0, 0.38); }
               .apiDocs .wrap .content .method .method-description .info .feild .key .badge {
-                background: #cbcbcf;
+                background: #a3a3ab;
                 margin-top: 0.4rem; }
               .apiDocs .wrap .content .method .method-description .info .feild .key code {
                 font-size: 1.6rem; }

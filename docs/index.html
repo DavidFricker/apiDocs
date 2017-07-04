@@ -18,7 +18,6 @@
   <meta name="msapplication-config" content="../assets/logos/favicons/browserconfig.xml">
   <meta name="theme-color" content="#2f2f38">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Open+Sans:400,600" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
 
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -68,22 +67,71 @@
               </li>
 
               <li>
-                  <a href="#whois-commands" class="">WHOIS API</a>
+                  <a href="#whois-welcome" class="">WHOIS API</a>
+                  <ul class="nav">
+                    <li>
+                      <a href="#whois-welcome" class="">Welcome</a>
+                    </li>
+                    <li>
+                      <a href="#whois-commands" class="">Commands</a>
+                    </li>
+                  </ul>
+              </li>
+
+
+              <li>
+                  <a href="#screenshot-welcome" class="">Screenshot API</a>
+                  <ul class="nav">
+                    <li>
+                      <a href="#screenshot-welcome" class="">Welcome</a>
+                    </li>
+                    <li>
+                      <a href="#screenshot-commands" class="">Commands</a>
+                    </li>
+                  </ul>
+              </li>
+
+
+              <li>
+                  <a href="#geoip-welcome" class="">Geolocate API</a>
+                  <ul class="nav">
+                    <li>
+                      <a href="#geoip-welcome" class="">Welcome</a>
+                    </li>
+                    <li>
+                      <a href="#geoip-commands" class="">Commands</a>
+                    </li>
+                  </ul>
               </li>
 
               <li>
-                  <a href="#screenshot-commands" class="">Screenshot API</a>
+                  <a href="#domain-welcome" class="">Domain availabily API</a>
+                  <ul class="nav">
+                    <li>
+                      <a href="#domain-welcome" class="">Welcome</a>
+                    </li>
+                    <li>
+                      <a href="#domain-commands" class="">Commands</a>
+                    </li>
+                  </ul>
               </li>
 
+
               <li>
-                  <a href="#geolocate-commands" class="">Geolocate API</a>
+                  <a href="#email-welcome" class="">Email validity API</a>
+                  <ul class="nav">
+                    <li>
+                      <a href="#email-welcome" class="">Welcome</a>
+                    </li>
+                    <li>
+                      <a href="#email-commands" class="">Commands</a>
+                    </li>
+                  </ul>
               </li>
-              <li>
-                  <a href="#domain-commands" class="">Domain availabily API</a>
-              </li>
-              <li>
-                  <a href="#email-commands" class="">Email validity API</a>
-              </li>
+
+
+
+
             </ul>
           </div>
 
@@ -142,78 +190,21 @@
             <div class="method-example">
 
               <div id="" class="tab-1 tab-content current">
-                <pre><code>PHP LOL
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}</code></pre>
+                <pre><code></code></pre>
               </div>
 
               <div class="tab-2 tab-content">
-                <pre><code>
-
-cURL lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
+                <pre><code></code></pre>
               </div>
 
               <div class="tab-3 tab-content">
-                <pre><code>
-
-etc lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
+                <pre><code></code></pre>
               </div>
 
             </div>
           </div>
+
+
 
 
           <div class="method" id="general-responses">
@@ -404,632 +395,678 @@ function Triangle(base,height){
 
 
 
-          <div class="method" id="whois-commands">
-            <div class="method-description">
-              <h1>WHOIS API Commands</h1>
-              <p>
-                This end-point accepts a domain as the argument and performs a WHOIS lookup. The result of that look up is then parsed into a json object and returned to your client.
-              </p>
 
-              <div class="info">
-                <div class="feild">
-                  <div class="key">
-                    <code>identifier</code>
-                    <p><strong><span class="response -defalt">paramater</span></strong></p>
-                  </div>
-                  <div class="description">
-                    <p>
-                      The domain name or IP address to lookup.
-                    </p>
-                  </div>
-                </div>
-              </div>
 
-            </div>
-            <div class="method-example">
 
-              <div id="" class="tab-1 tab-content current">
-                <pre><code>
 
-PHP LOL
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-
-              <div class="tab-2 tab-content">
-                <pre><code>
-
-cURL lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-
-              <div class="tab-3 tab-content">
-                <pre><code>
-
-etc lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-
-            </div>
-          </div>
-
-
-
-
-          <div class="method" id="sec1c">
-            <div class="method-description">
-              <h1>sec2</h1>
-              <p>
-                Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly strip steak pork
-                chop picanha cupim spare ribs ham pancetta turkey pork loin bacon shoulder sausage cow. Short loin hamburger prosciutto cupim ground round landjaeger. Beef ribs rump ham hock picanha, pancetta pork shoulder alcatra turkey
-                short ribs. <code>test.script();</code> Jerky shank brisket doner ham hock andouille hamburger bresaola beef ribeye boudin ground round jowl pork loin.
-              </p>
-            </div>
-            <div class="method-example">
-              <div id="" class="tab-1 tab-content current">
-                <pre><code>
-
-PHP LOL
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-
-              <div class="tab-2 tab-content">
-                <pre><code>
-
-cURL lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-
-              <div class="tab-3 tab-content">
-                <pre><code>
-
-etc lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-            </div>
-          </div>
-
-          <div class="method" id="sec2">
-            <div class="method-description">
-              <h1>sec2</h1>
-              <p>
-                Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly strip steak pork
-                chop picanha cupim spare ribs ham pancetta turkey pork loin bacon shoulder sausage cow. Short loin hamburger prosciutto cupim ground round landjaeger. Beef ribs rump ham hock picanha, pancetta pork shoulder alcatra turkey
-                short ribs. <code>test.script();</code> Jerky shank brisket doner ham hock andouille hamburger bresaola beef ribeye boudin ground round jowl pork loin.
-              </p>
-            </div>
-            <div class="method-example">
-              <div id="" class="tab-1 tab-content current">
-                <pre><code>
-
-PHP LOL
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-
-              <div class="tab-2 tab-content">
-                <pre><code>
-
-cURL lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-
-              <div class="tab-3 tab-content">
-                <pre><code>
-
-etc lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="method" id="sec2a">
-            <div class="method-description">
-              <h1>sec2a</h1>
-              <p>
-                Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly strip steak pork
-                chop picanha cupim spare ribs ham pancetta turkey pork loin bacon shoulder sausage cow. Short loin hamburger prosciutto cupim ground round landjaeger. Beef ribs rump ham hock picanha, pancetta pork shoulder alcatra turkey
-                short ribs. <code>test.script();</code> Jerky shank brisket doner ham hock andouille hamburger bresaola beef ribeye boudin ground round jowl pork loin.
-              </p>
-            </div>
-            <div class="method-example">
-              <div id="" class="tab-1 tab-content current">
-                <pre><code>
-
-          PHP LOL
-          function Shape(){
-          // this is a comment
-          this.name = 'Shape';
-          this.toString = function(){return this.name;};
-          }
-
-
-          function Shape2D(){
-          this.name = 'Shape 2D';
-          }
-
-          function Triangle(base,height){
-          this.name = 'Triangle';
-          this.base = base;
-          this.height = height;
-          this.getArea = function(){return this.base*this.height/2;};
-          }
-
-                </code></pre>
-              </div>
-
-              <div class="tab-2 tab-content">
-                <pre><code>
-
-          cURL lol
-          function Shape(){
-          // this is a comment
-          this.name = 'Shape';
-          this.toString = function(){return this.name;};
-          }
-
-
-          function Shape2D(){
-          this.name = 'Shape 2D';
-          }
-
-          function Triangle(base,height){
-          this.name = 'Triangle';
-          this.base = base;
-          this.height = height;
-          this.getArea = function(){return this.base*this.height/2;};
-          }
-
-                </code></pre>
-              </div>
-
-              <div class="tab-3 tab-content">
-                <pre><code>
-
-          etc lol
-          function Shape(){
-          // this is a comment
-          this.name = 'Shape';
-          this.toString = function(){return this.name;};
-          }
-
-
-          function Shape2D(){
-          this.name = 'Shape 2D';
-          }
-
-          function Triangle(base,height){
-          this.name = 'Triangle';
-          this.base = base;
-          this.height = height;
-          this.getArea = function(){return this.base*this.height/2;};
-          }
-
-                </code></pre>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="method" id="sec2b">
-            <div class="method-description">
-              <h1>sec2b</h1>
-              <p>
-                Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly strip steak pork
-                chop picanha cupim spare ribs ham pancetta turkey pork loin bacon shoulder sausage cow. Short loin hamburger prosciutto cupim ground round landjaeger. Beef ribs rump ham hock picanha, pancetta pork shoulder alcatra turkey
-                short ribs. <code>test.script();</code> Jerky shank brisket doner ham hock andouille hamburger bresaola beef ribeye boudin ground round jowl pork loin.
-              </p>
-            </div>
-            <div class="method-example">
-              <div id="" class="tab-1 tab-content current">
-                <pre><code>
-
-          PHP LOL
-          function Shape(){
-          // this is a comment
-          this.name = 'Shape';
-          this.toString = function(){return this.name;};
-          }
-
-
-          function Shape2D(){
-          this.name = 'Shape 2D';
-          }
-
-          function Triangle(base,height){
-          this.name = 'Triangle';
-          this.base = base;
-          this.height = height;
-          this.getArea = function(){return this.base*this.height/2;};
-          }
-
-                </code></pre>
-              </div>
-
-              <div class="tab-2 tab-content">
-                <pre><code>
-
-          cURL lol
-          function Shape(){
-          // this is a comment
-          this.name = 'Shape';
-          this.toString = function(){return this.name;};
-          }
-
-
-          function Shape2D(){
-          this.name = 'Shape 2D';
-          }
-
-          function Triangle(base,height){
-          this.name = 'Triangle';
-          this.base = base;
-          this.height = height;
-          this.getArea = function(){return this.base*this.height/2;};
-          }
-
-                </code></pre>
-              </div>
-
-              <div class="tab-3 tab-content">
-                <pre><code>
-
-          etc lol
-          function Shape(){
-          // this is a comment
-          this.name = 'Shape';
-          this.toString = function(){return this.name;};
-          }
-
-
-          function Shape2D(){
-          this.name = 'Shape 2D';
-          }
-
-          function Triangle(base,height){
-          this.name = 'Triangle';
-          this.base = base;
-          this.height = height;
-          this.getArea = function(){return this.base*this.height/2;};
-          }
-
-                </code></pre>
-              </div>
-            </div>
-          </div>
-
-          <div class="method" id="sec3">
-            <div class="method-description">
-              <h1>sec3</h1>
-              <p>
-                Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly strip steak pork
-                chop picanha cupim spare ribs ham pancetta turkey pork loin bacon shoulder sausage cow. Short loin hamburger prosciutto cupim ground round landjaeger. Beef ribs rump ham hock picanha, pancetta pork shoulder alcatra turkey
-                short ribs. <code>test.script();</code> Jerky shank brisket doner ham hock andouille hamburger bresaola beef ribeye boudin ground round jowl pork loin.
-              </p>
-            </div>
-            <div class="method-example">
-              <div id="" class="tab-1 tab-content current">
-                <pre><code>PHP LOL
-          function Shape(){
-          // this is a comment
-          this.name = 'Shape';
-          this.toString = function(){return this.name;};
-          }
-
-
-          function Shape2D(){
-          this.name = 'Shape 2D';
-          }
-
-          function Triangle(base,height){
-          this.name = 'Triangle';
-          this.base = base;
-          this.height = height;
-          this.getArea = function(){return this.base*this.height/2;};
-          }</code></pre>
-              </div>
-
-              <div class="tab-2 tab-content">
-                <pre><code>cURL lol
-          function Shape(){
-          // this is a comment
-          this.name = 'Shape';
-          this.toString = function(){return this.name;};
-          }
-
-
-          function Shape2D(){
-          this.name = 'Shape 2D';
-          }
-
-          function Triangle(base,height){
-          this.name = 'Triangle';
-          this.base = base;
-          this.height = height;
-          this.getArea = function(){return this.base*this.height/2;};
-          }</code></pre>
-              </div>
-
-              <div class="tab-3 tab-content">
-                <pre><code>
-
-          etc lol
-          function Shape(){
-          // this is a comment
-          this.name = 'Shape';
-          this.toString = function(){return this.name;};
-          }
-
-
-          function Shape2D(){
-          this.name = 'Shape 2D';
-          }
-
-          function Triangle(base,height){
-          this.name = 'Triangle';
-          this.base = base;
-          this.height = height;
-          this.getArea = function(){return this.base*this.height/2;};
-          }
-
-                </code></pre>
-              </div>
-            </div>
-          </div>
-
-          <div class="method" id="sec4">
-            <div class="method-description">
-              <h1>Section 4</h1>
-              <p>
-                Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly strip steak pork
-                chop picanha cupim spare ribs ham pancetta turkey pork loin bacon shoulder sausage cow. Short loin hamburger prosciutto cupim ground round landjaeger. Beef ribs rump ham hock picanha, pancetta pork shoulder alcatra turkey
-                short ribs. <code>test.script();</code> Jerky shank brisket doner ham hock andouille hamburger bresaola beef ribeye boudin ground round jowl pork loin.
-              </p>
-            </div>
-            <div class="method-example">
-              <div id="" class="tab-1 tab-content current">
-                <pre><code>
-
-PHP LOL
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-
-              <div class="tab-2 tab-content">
-                <pre><code>
-
-cURL lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-
-              <div class="tab-3 tab-content">
-                <pre><code>
-
-etc lol
-function Shape(){
-  // this is a comment
-  this.name = 'Shape';
-  this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-  this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-  this.name = 'Triangle';
-  this.base = base;
-  this.height = height;
-  this.getArea = function(){return this.base*this.height/2;};
-}
-
-                </code></pre>
-              </div>
-            </div>
-          </div>
 
 
         </div>
 
+
+
+
+
+
+        <div id="whois-welcome" class="header -whois">
+          <h1>Whois API Documentation</h1>
+          <h3>Free to use documentation template</h3>
+          <p>Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly
+          strip steak</p>
+          <a class="btn -secondary -shadow" href="#">Get your FREE API key</a>
+        </div>
+
+    <div class="content">
+      <div class="setLang">
+        <ul class="languages tabs">
+          <li class="tab-link current" data-tab="tab-1">
+            php
+          </li>
+          <li class="tab-link" data-tab="tab-2">
+            cURL
+          </li>
+          <li class="tab-link" data-tab="tab-3">
+            etc
+          </li>
+        </ul>
       </div>
+
+        <div class="method" id="whois-commands">
+          <div class="method-description">
+            <h1>WHOIS API Commands</h1>
+            <p>
+              This end-point accepts a domain as the argument and performs a WHOIS lookup. The result of that look up is then parsed into a json object and returned to your client.
+            </p>
+
+            <div class="info">
+              <div class="feild">
+                <div class="key">
+                  <code>identifier</code>
+                  <p><strong><span class="response -defalt">paramater</span></strong></p>
+                </div>
+                <div class="description">
+                  <p>
+                    The domain name or IP address to lookup.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="method-example">
+
+            <div id="" class="tab-1 tab-content current">
+              <pre><code>
+
+PHP LOL
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+              </code></pre>
+            </div>
+
+            <div class="tab-2 tab-content">
+              <pre><code>
+
+cURL lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+              </code></pre>
+            </div>
+
+            <div class="tab-3 tab-content">
+              <pre><code>
+
+etc lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+              </code></pre>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+        <div id="screenshot-welcome" class="header -screenshots">
+          <h1>Screenshot API Documentation</h1>
+          <h3>Free to use documentation template</h3>
+          <p>Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly
+          strip steak</p>
+          <a class="btn -secondary -shadow" href="#">Get your FREE API key</a>
+        </div>
+
+        <div class="content">
+          <div class="setLang">
+            <ul class="languages tabs">
+              <li class="tab-link current" data-tab="tab-1">
+                php
+              </li>
+              <li class="tab-link" data-tab="tab-2">
+                cURL
+              </li>
+              <li class="tab-link" data-tab="tab-3">
+                etc
+              </li>
+            </ul>
+          </div>
+
+        <div class="method" id="screenshot-commands">
+          <div class="method-description">
+            <h1>screenshot API Commands</h1>
+            <p>
+              This end-point accepts a domain as the argument and performs a WHOIS lookup. The result of that look up is then parsed into a json object and returned to your client.
+            </p>
+
+            <div class="info">
+              <div class="feild">
+                <div class="key">
+                  <code>identifier</code>
+                  <p><strong><span class="response -defalt">paramater</span></strong></p>
+                </div>
+                <div class="description">
+                  <p>
+                    The domain name or IP address to lookup.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="method-example">
+
+            <div id="" class="tab-1 tab-content current">
+              <pre><code>
+
+PHP LOL
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+              </code></pre>
+            </div>
+
+            <div class="tab-2 tab-content">
+              <pre><code>
+
+cURL lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+              </code></pre>
+            </div>
+
+            <div class="tab-3 tab-content">
+              <pre><code>
+
+etc lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+              </code></pre>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+      <div id="geoip-welcome" class="header -geoip">
+        <h1>geoip API Documentation</h1>
+        <h3>Free to use documentation template</h3>
+        <p>Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly
+        strip steak</p>
+        <a class="btn -secondary -shadow" href="#">Get your FREE API key</a>
+      </div>
+
+      <div class="content">
+        <div class="setLang">
+          <ul class="languages tabs">
+            <li class="tab-link current" data-tab="tab-1">
+              php
+            </li>
+            <li class="tab-link" data-tab="tab-2">
+              cURL
+            </li>
+            <li class="tab-link" data-tab="tab-3">
+              etc
+            </li>
+          </ul>
+        </div>
+
+      <div class="method" id="geoip-commands">
+        <div class="method-description">
+          <h1>screenshot API Commands</h1>
+          <p>
+            This end-point accepts a domain as the argument and performs a WHOIS lookup. The result of that look up is then parsed into a json object and returned to your client.
+          </p>
+
+          <div class="info">
+            <div class="feild">
+              <div class="key">
+                <code>identifier</code>
+                <p><strong><span class="response -defalt">paramater</span></strong></p>
+              </div>
+              <div class="description">
+                <p>
+                  The domain name or IP address to lookup.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="method-example">
+
+          <div id="" class="tab-1 tab-content current">
+            <pre><code>
+
+PHP LOL
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+            </code></pre>
+          </div>
+
+          <div class="tab-2 tab-content">
+            <pre><code>
+
+cURL lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+            </code></pre>
+          </div>
+
+          <div class="tab-3 tab-content">
+            <pre><code>
+
+etc lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+            </code></pre>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+    <div id="domain-welcome" class="header -domains">
+      <h1>doamin API Documentation</h1>
+      <h3>Free to use documentation template</h3>
+      <p>Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly
+      strip steak</p>
+      <a class="btn -secondary -shadow" href="#">Get your FREE API key</a>
+    </div>
+
+    <div class="content">
+      <div class="setLang">
+        <ul class="languages tabs">
+          <li class="tab-link current" data-tab="tab-1">
+            php
+          </li>
+          <li class="tab-link" data-tab="tab-2">
+            cURL
+          </li>
+          <li class="tab-link" data-tab="tab-3">
+            etc
+          </li>
+        </ul>
+      </div>
+
+    <div class="method" id="domain-commands">
+      <div class="method-description">
+        <h1>screenshot API Commands</h1>
+        <p>
+          This end-point accepts a domain as the argument and performs a WHOIS lookup. The result of that look up is then parsed into a json object and returned to your client.
+        </p>
+
+        <div class="info">
+          <div class="feild">
+            <div class="key">
+              <code>identifier</code>
+              <p><strong><span class="response -defalt">paramater</span></strong></p>
+            </div>
+            <div class="description">
+              <p>
+                The domain name or IP address to lookup.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="method-example">
+
+        <div id="" class="tab-1 tab-content current">
+          <pre><code>
+
+PHP LOL
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+          </code></pre>
+        </div>
+
+        <div class="tab-2 tab-content">
+          <pre><code>
+
+cURL lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+          </code></pre>
+        </div>
+
+        <div class="tab-3 tab-content">
+          <pre><code>
+
+etc lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+          </code></pre>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+  <div id="email-welcome" class="header -emailcheck">
+    <h1>Email API Documentation</h1>
+    <h3>Free to use documentation template</h3>
+    <p>Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly
+    strip steak</p>
+    <a class="btn -secondary -shadow" href="#">Get your FREE API key</a>
+  </div>
+
+  <div class="content">
+    <div class="setLang">
+      <ul class="languages tabs">
+        <li class="tab-link current" data-tab="tab-1">
+          php
+        </li>
+        <li class="tab-link" data-tab="tab-2">
+          cURL
+        </li>
+        <li class="tab-link" data-tab="tab-3">
+          etc
+        </li>
+      </ul>
+    </div>
+
+  <div class="method" id="email-commands">
+    <div class="method-description">
+      <h1>screenshot API Commands</h1>
+      <p>
+        This end-point accepts a domain as the argument and performs a WHOIS lookup. The result of that look up is then parsed into a json object and returned to your client.
+      </p>
+
+      <div class="info">
+        <div class="feild">
+          <div class="key">
+            <code>identifier</code>
+            <p><strong><span class="response -defalt">paramater</span></strong></p>
+          </div>
+          <div class="description">
+            <p>
+              The domain name or IP address to lookup.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="method-example">
+
+      <div id="" class="tab-1 tab-content current">
+        <pre><code>
+
+PHP LOL
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+        </code></pre>
+      </div>
+
+      <div class="tab-2 tab-content">
+        <pre><code>
+
+cURL lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+        </code></pre>
+      </div>
+
+      <div class="tab-3 tab-content">
+        <pre><code>
+
+etc lol
+function Shape(){
+// this is a comment
+this.name = 'Shape';
+this.toString = function(){return this.name;};
+}
+
+
+function Shape2D(){
+this.name = 'Shape 2D';
+}
+
+function Triangle(base,height){
+this.name = 'Triangle';
+this.base = base;
+this.height = height;
+this.getArea = function(){return this.base*this.height/2;};
+}
+
+        </code></pre>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
     </div>
   </section>
 

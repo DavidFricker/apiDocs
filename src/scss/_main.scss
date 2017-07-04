@@ -224,7 +224,7 @@ body {
                 }
                 @include grid-media($neat-grid-tablet) {
                     display: block;
-                    padding-bottom: 10rem;
+                    padding-bottom: 14rem;
                 }
 
                 .search {
@@ -611,7 +611,7 @@ body {
                                 }
 
                                 .badge {
-                                    background: darken($codeHighlight, 15);
+                                    background: darken($codeHighlight, 30);
                                     margin-top: 0.4rem;
                                 }
 
