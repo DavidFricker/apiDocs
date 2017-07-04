@@ -1,10 +1,14 @@
+a{
+    transition: all .2s ease-in-out;
+}
+
 .btn{
   $baseBorderRadius: .4rem;
   $basePadding: 2.4rem;
   display: inline-block;
   -webkit-font-smoothing: antialiased;
-  font-family: $fontHeadings;
-  font-weight: 400;
+  font-family: $fontBody;
+  font-weight: 600;
   line-height: 1.25;
   text-align: center;
   white-space: nowrap;
@@ -13,7 +17,7 @@
   border: 1px solid transparent;
   padding: $basePadding/2 $basePadding;
   font-size: 1.8rem;
-  transition: all .2s ease-in-out;
+
   border-radius: $baseBorderRadius;
   text-decoration: none;
 

@@ -70,8 +70,10 @@ body {
                 justify-content: center;
 
                 h1 {
-                    margin: 0;
+                    margin: .8rem 0;
                 }
+
+
                 @include grid-media($neat-grid-tablet) {
                     padding: $basePadding*2 $basePadding $basePadding;
                     display: block;
@@ -306,9 +308,9 @@ body {
                         a {
                             text-decoration: none;
                             color: $textLightSecondary;
-                            padding: $basePadding/4 $basePadding;
+                            padding: $basePadding/2 $basePadding;
                             display: block;
-                            font-weight: 600;
+                            font-weight: 400;
                             border-left: 3px solid transparent;
 
                             &:hover{
@@ -390,6 +392,16 @@ body {
                         margin-bottom: 0.8rem;
                         border-bottom: 1px solid $textLightHint;
                     }
+
+                    a{
+                      color: $textLightPrimary;
+                      text-decoration: none;
+
+                      &:hover{
+                        color: $textLightSecondary;
+                        text-decoration: none;
+                      }
+                    }
                 }
             }
         }
@@ -417,17 +429,48 @@ body {
               outline: none;
             }
 
-
+            h1,
+            h3,
+            p {
+                color: $textLightPrimary;
+            }
 
             &.-main {
                 background: #9FA8DA;
-                background: linear-gradient(to right, #9FA8DA, #5C6BC0);
-                h1,
-                h3,
-                p {
-                    color: $textLightPrimary;
-                }
+                @include themeGradientLinearPrimary;
+
             }
+
+            &.-screenshots {
+                background: $serviceScreenshots;
+                background: linear-gradient(to top, darken($serviceScreenshots,12), $serviceScreenshots);
+            }
+
+            &.-emailcheck {
+                background: $serviceEmailCheck;
+                background: linear-gradient(to top, darken($serviceEmailCheck,12), $serviceEmailCheck);
+            }
+
+            &.-domains {
+                background: $serviceDomainCheck;
+                background: linear-gradient(to top, darken($serviceDomainCheck,12), $serviceDomainCheck);
+            }
+
+            &.-whois {
+                background: $serviceWhois;
+                background: linear-gradient(to top, darken($serviceWhois,12), $serviceWhois);
+            }
+
+            &.-sentiment {
+                background: $serviceSentiment;
+                background: linear-gradient(to top, darken($serviceSentiment,12), $serviceSentiment);
+            }
+
+            &.-geoip {
+                background: $serviceGeoIP;
+                background: linear-gradient(to top, darken($serviceGeoIP,12), $serviceGeoIP);
+            }
+
 
             h1 {
                 font-size: 3em;
@@ -548,7 +591,7 @@ body {
                             margin-bottom: 0.8rem;
 
                             .key {
-                                flex: 1 0 0;
+                                flex: 2 0 0;
                                 text-align: right;
 
                                 .response {
@@ -571,15 +614,20 @@ body {
                                     background: darken($codeHighlight, 15);
                                     margin-top: 0.4rem;
                                 }
+
+                                code{
+                                  font-size: 1.6rem;
+                                }
                             }
 
                             .description {
-                                flex: 2 0 0;
+                                flex: 3 0 0;
                                 text-align: left;
                                 padding-left: 1.4rem;
 
                                 p {
                                     margin-bottom: 0.2rem;
+                                    font-size: 1.6rem;
                                 }
                             }
                         }

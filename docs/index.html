@@ -8,19 +8,26 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:600" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/apiDocs.css">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <meta name="description" content="API Documentation - WebCargo">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/logos/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/logos/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/logos/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../assets/logos/favicons/manifest.json">
+  <link rel="mask-icon" href="../assets/logos/favicons/safari-pinned-tab.svg" color="#225f9b">
+  <link rel="shortcut icon" href="../assets/logos/favicons/favicon.ico">
+  <meta name="msapplication-config" content="../assets/logos/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#2f2f38">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Open+Sans:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
   <title>
-    apiDocs - Free to use responsive documentation template for your API's
+    API Documentation - WebCargo
   </title>
-
-  <meta name="Description" content="Free to use responsive documentation template for your API's.">
-  <meta name="Keywords" content="API, documentation, free, scss, javascript, js, template, github">
 
 </head>
 
@@ -32,33 +39,11 @@
       <nav class="navMain">
         <div id="navInner">
           <div class="brand">
-            <h1>apiDocs</h1>
-          </div>
-
-
-          <div class="version">
-
-            <form class="" action="#" method="post">
-              <div class="form-group">
-                <span>
-                Version
-              </span>
-              <div class="dropdown">
-                <select class="" name="">
-                  <option> 1.0.0</option>
-                  <option> 1.0.4</option>
-                </select>
-              </div>
-            </div>
-            </form>
-
-
-
-
+            <img src="assets/logos/logo-icon-white.png">
+            <h1>WebCargo Docs</h1>
           </div>
 
           <div class="menu-toggle">
-
             <a class="btnToggle" href="#">
             <div class="toggle"></div>
               <div class="toggle"></div>
@@ -66,58 +51,38 @@
                </a>
           </div>
           <div class="docsNav">
-
-
-
-            <div class="search">
-
-              <form class="" action="#" method="post">
-                <div class="form-group">
-                  <a class="addon" href="#">
-                    <i class="ion-ios-search-strong"></i>
-                  </a>
-                  <input type="text" class="search" id="docs-search" placeholder="Search"/>
-                </div>
-              </form>
-
-            </div>
             <ul class="nav nav-stacked">
-
               <li>
-                <a href="#welcome" class="">Welcome</a>
-              </li>
-
-              <li>
-                <a href="#sec1" class="">Section 1</a>
+                <a href="#general" class="">General</a>
                 <ul class="nav">
                   <li>
-                    <a href="#sec1a" class="">Sub Section 1</a>
+                    <a href="#general-auth" class="">Authentication</a>
                   </li>
                   <li>
-                    <a href="#sec1b" class="">Sub Section 2</a>
+                    <a href="#general-responses" class="">Response codes</a>
                   </li>
                   <li>
-                    <a href="#sec1c" class="">SubSection 3</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#sec2" class="">Section 2</a>
-                <ul class="nav">
-                  <li>
-                    <a href="#sec2a" class="">Sub Section 1</a>
-                  </li>
-                  <li>
-                    <a href="#sec2b" class="">Sub Section 2</a>
+
                   </li>
                 </ul>
               </li>
 
               <li>
-                <a href="#sec3" class="">Section 3</a>
+                  <a href="#whois-commands" class="">WHOIS API</a>
+              </li>
+
+              <li>
+                  <a href="#screenshot-commands" class="">Screenshot API</a>
+              </li>
+
+              <li>
+                  <a href="#geolocate-commands" class="">Geolocate API</a>
               </li>
               <li>
-                <a href="#sec4" class="">Section 4</a>
+                  <a href="#domain-commands" class="">Domain availabily API</a>
+              </li>
+              <li>
+                  <a href="#email-commands" class="">Email validity API</a>
               </li>
             </ul>
           </div>
@@ -128,9 +93,9 @@
           <p>Need help?</p>
           <p>
 
-          <i class="ion-help-buoy"></i> Browse the knowledge base </p>
+          <a href="../help.php"><i class="ion-help-buoy"></i> Browse the knowledge base </p></a>
           <p>
-              <i class="ion-chatboxes"></i> Contact support</p>
+              <a href="../contact.php"><i class="ion-chatboxes"></i> Contact support</p></a>
         </div>
 
       </nav>
@@ -138,12 +103,12 @@
       <div id="wrap" class="wrap">
 
 
-        <div id="welcome" class="header -main">
-          <h1>apiDocs</h1>
+        <div id="general" class="header -main">
+          <h1>general API Documentation</h1>
           <h3>Free to use documentation template</h3>
           <p>Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly
           strip steak</p>
-          <a class="btn -secondary -rounded -shadow" href="#">Get your FREE API key</a>
+          <a class="btn -secondary -shadow" href="#">Get your FREE API key</a>
         </div>
 
 
@@ -164,88 +129,14 @@
           </div>
 
 
-          <div class="method" id="sec1">
+          <div class="method" id="general-auth">
             <div class="method-description">
-              <h1>sec1 <span class="badge">POST</span></h1>
+              <h1>Authentication</h1>
               <p>
-                Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly strip steak pork
-                chop picanha cupim spare ribs ham pancetta turkey pork loin bacon shoulder sausage cow. Short loin hamburger prosciutto cupim ground round landjaeger. Beef ribs rump ham hock picanha, pancetta pork shoulder alcatra turkey
-                short ribs. Jerky shank brisket doner ham hock andouille hamburger bresaola beef ribeye boudin ground round jowl pork loin.
-              </p>
+                           Authentication using our API is simple. To authenticate simply append the private key that can be found in your <a href="/dashboard" target="_blank">dashboard</a> to the API end point like in the example to the right. That's it, your request is now authenticated and logged in your <a href="/api/log" target="_blank">api call log</a>.
+                        </p>
 
-              <div class="info">
-                <div class="feild">
-                  <div class="key">
 
-                    <span class="badge">CMD_PROCESSED</span>
-                    <p><strong><span class="response -defalt">Default lol</span></strong></p>
-                  </div>
-                  <div class="description">
-                    <p><strong>
-                      Command has been processed</strong>
-                    </p>
-                    <p>
-                      A short plain text explanation of the status of the request.
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <div class="feild">
-                  <div class="key">
-
-                    <span class="badge">CMD_PROCESSED</span>
-                    <p><strong><span class="response -error">404</span></strong></p>
-                  </div>
-                  <div class="description">
-                    <p><strong>
-                      Command has been processed</strong>
-                    </p>
-                    <p>
-                      A short plain text explanation of the status of the request.
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <div class="feild">
-                  <div class="key">
-
-                    <span class="badge">CMD_PROCESSED</span>
-                    <p><strong><span class="response -success">200 OK</span></strong></p>
-                  </div>
-                  <div class="description">
-                    <p><strong>
-                      Command has been processed</strong>
-                    </p>
-                    <p>
-                      A short plain text explanation of the status of the request.
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <div class="feild">
-                  <div class="key">
-
-                    <span class="badge">CMD_PROCESSED</span>
-                    <p><strong><span class="response -error">400 Bad Request</span></strong></p>
-                  </div>
-                  <div class="description">
-                    <p><strong>
-                      Command has been processed</strong>
-                    </p>
-                    <p>
-                      A short plain text explanation of the status of the request.
-                    </p>
-
-                  </div>
-
-                </div>
-              </div>
 
             </div>
             <div class="method-example">
@@ -325,14 +216,114 @@ function Triangle(base,height){
           </div>
 
 
-          <div class="method" id="sec1a">
+          <div class="method" id="general-responses">
             <div class="method-description">
-              <h1>sec1a</h1>
+              <h1>Response codes</h1>
               <p>
-                Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly strip steak pork
-                chop picanha cupim spare ribs ham pancetta turkey pork loin bacon shoulder sausage cow. Short loin hamburger prosciutto cupim ground round landjaeger. Beef ribs rump ham hock picanha, pancetta pork shoulder alcatra turkey
-                short ribs. <code>test.script();</code> Jerky shank brisket doner ham hock andouille hamburger bresaola beef ribeye boudin ground round jowl pork loin.
+                The parseWHOIS API uses standard HTTP response codes to communicate the result of an API call. Below is a list of the possible codes that could be returned and how they should be interpreted.
               </p>
+
+              <div class="info">
+                <div class="feild">
+                  <div class="key">
+                    <span class="badge">200</span>
+                    <p><strong><span class="response -defalt">Processed</span></strong></p>
+                  </div>
+                  <div class="description">
+                    <p>
+                      The command was processed successfully.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feild">
+                  <div class="key">
+                    <span class="badge">422</span>
+                    <p><strong><span class="response -defalt">Unprocessable</span></strong></p>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Well formatted request however some technical issue is preventing the serving of the request, e.g. an unresponsive WHOIS server
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feild">
+                  <div class="key">
+                    <span class="badge">400</span>
+                    <p><strong><span class="response -defalt">Command unknown</span></strong></p>
+                  </div>
+                  <div class="description">
+                    <p>
+                      The end-point you have sent the request to is not valid. The end point should be /whois.
+                    </p>
+                  </div>
+                </div>
+
+
+                                <div class="feild">
+                                  <div class="key">
+                                    <span class="badge">405</span>
+                                    <p><strong><span class="response -defalt">Command invalid</span></strong></p>
+                                  </div>
+                                  <div class="description">
+                                    <p>
+                                      The HTTP request method used is not compatible with the selected end-point. This can occur when using POST rather than GET for example.
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="feild">
+                                  <div class="key">
+                                    <span class="badge">409</span>
+                                    <p><strong><span class="response -defalt">Command malformed</span></strong></p>
+                                  </div>
+                                  <div class="description">
+                                    <p>
+The request has been incorrectly constructed. This can occur when omitting required parameters or providing them in the wrong type.                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="feild">
+                                  <div class="key">
+                                    <span class="badge">401</span>
+                                    <p><strong><span class="response -defalt">Unauthorized</span></strong></p>
+                                  </div>
+                                  <div class="description">
+                                    <p>
+The request was not authorised. This can occur when using an incorrect key, if the server IP is not on the account whitelist, or if the account is banned.
+</div>
+                                </div>
+
+                                <div class="feild">
+                                  <div class="key">
+                                    <span class="badge">402</span>
+                                    <p><strong><span class="response -defalt">Billing</span></strong></p>
+                                  </div>
+                                  <div class="description">
+                                    <p>
+The request was refused due to a billing issue with the associated account. Please check you have sufficent funding associated with your account.
+                                </div>
+                              </div>
+
+                              <div class="feild">
+                                <div class="key">
+                                  <span class="badge">500</span>
+                                  <p><strong><span class="response -defalt">Internal Server Error</span></strong></p>
+                                </div>
+                                <div class="description">
+                                  <p>
+TThe client did everything correctly, but we've had an internal issue.
+
+                              </div>
+                            </div>
+
+
+
+
+
+              </div>
+
             </div>
             <div class="method-example">
               <div id="" class="tab-1 tab-content current">
@@ -413,14 +404,26 @@ function Triangle(base,height){
 
 
 
-          <div class="method" id="sec1b">
+          <div class="method" id="whois-commands">
             <div class="method-description">
-              <h1>sec1b</h1>
+              <h1>WHOIS API Commands</h1>
               <p>
-                Bacon ipsum dolor amet chuck tongue shank, porchetta brisket swine drumstick pork chop ball tip jerky andouille cow venison beef tenderloin. Corned beef jowl chuck turkey, tail pancetta frankfurter pig t-bone cow porchetta. Pork belly strip steak pork
-                chop picanha cupim spare ribs ham pancetta turkey pork loin bacon shoulder sausage cow. Short loin hamburger prosciutto cupim ground round landjaeger. Beef ribs rump ham hock picanha, pancetta pork shoulder alcatra turkey
-                short ribs. Jerky shank brisket doner ham hock andouille hamburger bresaola beef ribeye boudin ground round jowl pork loin.
+                This end-point accepts a domain as the argument and performs a WHOIS lookup. The result of that look up is then parsed into a json object and returned to your client.
               </p>
+
+              <div class="info">
+                <div class="feild">
+                  <div class="key">
+                    <code>identifier</code>
+                    <p><strong><span class="response -defalt">paramater</span></strong></p>
+                  </div>
+                  <div class="description">
+                    <p>
+                      The domain name or IP address to lookup.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
             </div>
             <div class="method-example">
@@ -1042,7 +1045,6 @@ function Triangle(base,height){
   <script type="text/javascript" src="assets/js/apiDocs.min.js"></script>
 
 
-  // Delete this from your account, or add your own analytics
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

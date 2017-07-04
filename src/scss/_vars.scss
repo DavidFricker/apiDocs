@@ -55,19 +55,17 @@ $bgFillDarkPrimary: rgba(0, 0, 0, 0.3);
 $bgFillLightPrimary: rgba(255, 255, 255, 0.5);
 
 // Theme
-$themeColorPrimary: #17629B; //#225F9B; //#5CB988;
+$themeColorPrimary: #2F2F38; // #17629B; //#225F9B; //#5CB988;
 $themeColorSecondary: #F1A208;//#F0C987;
 
 
 @mixin themeGradientLinearPrimary {
-  background: $themeColorPrimary; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, darken($themeColorPrimary, 8) , lighten($themeColorPrimary, 8)); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, darken($themeColorPrimary, 8) , lighten($themeColorPrimary, 8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2F2F38;
+  background: linear-gradient(to top, #4381C1, #034078);
 }
 
 @mixin themeGradientLinearSecondary {
   background: $themeColorSecondary; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, darken($themeColorSecondary, 8) , lighten($themeColorSecondary, 8)); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, darken($themeColorSecondary, 8) , lighten($themeColorSecondary, 8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -75,3 +73,15 @@ $themeColorSecondary: #F1A208;//#F0C987;
 $colorTwitter: #0084b4;
 $colorFacebook: #3b5998;
 $colorNewsletter: $themeColorSecondary;
+
+
+
+////services color
+$serviceWhois:#5C828E;
+$serviceScreenshots: #680065; //#067858;
+$serviceDomainCheck: #067858;
+$serviceEmailCheck: #8DCB9E;
+$servicePhoneVal: #73648A;
+$serviceIdea: #DDCA35;
+$serviceSentiment: #70ABAF;
+$serviceGeoIP: #379392;
