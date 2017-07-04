@@ -171,7 +171,7 @@
                 cURL
               </li>
               <li class="tab-link" data-tab="tab-3">
-                etc
+                JS
               </li>
             </ul>
           </div>
@@ -190,15 +190,15 @@
             <div class="method-example">
 
               <div id="" class="tab-1 tab-content current">
-                <pre><code>https://api.parsewhois.com/whois?key=YOUR_KEY_HERE</code></pre>
+                <pre><code>https://api.webcargo.io/whois?key=YOUR_KEY_HERE</code></pre>
               </div>
 
               <div class="tab-2 tab-content">
-                <pre><code>https://api.parsewhois.com/whois?key=YOUR_KEY_HERE</code></pre>
+                <pre><code>https://api.webcargo.io/whois?key=YOUR_KEY_HERE</code></pre>
               </div>
 
               <div class="tab-3 tab-content">
-                <pre><code>https://api.parsewhois.com/whois?key=YOUR_KEY_HERE</code></pre>
+                <pre><code>https://api.webcargo.io/whois?key=YOUR_KEY_HERE</code></pre>
               </div>
 
             </div>
@@ -211,7 +211,7 @@
             <div class="method-description">
               <h1>Response codes</h1>
               <p>
-                The parseWHOIS API uses standard HTTP response codes to communicate the result of an API call. Below is a list of the possible codes that could be returned and how they should be interpreted.
+                The webCargo API uses standard HTTP response codes to communicate the result of an API call. Below is a list of the possible codes that could be returned and how they should be interpreted.
               </p>
 
               <div class="info">
@@ -302,7 +302,7 @@ The request was not authorised. This can occur when using an incorrect key, if t
                                 <div class="feild">
                                   <div class="key">
                                     <span class="badge">402</span>
-                                    <p><strong><span class="response -defalt">Billing</span></strong></p>
+                                    <p><strong><span class="response -defalt">Billing issue</span></strong></p>
                                   </div>
                                   <div class="description">
                                     <p>
@@ -367,7 +367,7 @@ TThe client did everything correctly, but we've had an internal issue.
             cURL
           </li>
           <li class="tab-link" data-tab="tab-3">
-            etc
+            JS
           </li>
         </ul>
       </div>
@@ -395,7 +395,6 @@ TThe client did everything correctly, but we've had an internal issue.
               <div class="feild -title">
                 <div class="key">
                   <code>identifier</code>
-                  <p><strong><span class="response -defalt">paramater</span></strong></p>
                 </div>
                 <div class="description">
                   <p>
@@ -404,95 +403,112 @@ TThe client did everything correctly, but we've had an internal issue.
                 </div>
               </div>
 
-              <div class="feild">
-                <div class="key">
-                  <code>identifier</code>
-                  <p><strong><span class="response -defalt">paramater</span></strong></p>
-                </div>
-                <div class="description">
-                  <p>
-                    The domain name or IP address to lookup.
-                  </p>
-                </div>
-              </div>
+
             </div>
 
           </div>
           <div class="method-example">
 
             <div id="" class="tab-1 tab-content current">
-              <pre><code>
-
-PHP LOL
-function Shape(){
-// this is a comment
-this.name = 'Shape';
-this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-this.name = 'Triangle';
-this.base = base;
-this.height = height;
-this.getArea = function(){return this.base*this.height/2;};
-}
-
-              </code></pre>
+              <pre><code>//coming soon</code></pre>
             </div>
 
             <div class="tab-2 tab-content">
-              <pre><code>
+              <pre><code>// api call
+curl 'https://api.parsewhois.com/whois?key=YOUR_KEY_HERE&identifier=parsewhois.com'
 
-cURL lol
-function Shape(){
-// this is a comment
-this.name = 'Shape';
-this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-this.name = 'Triangle';
-this.base = base;
-this.height = height;
-this.getArea = function(){return this.base*this.height/2;};
-}
-
-              </code></pre>
+// api response
+{
+   "result":{
+      "name":"google.com",
+      "created":"1997-09-15 07:00:00",
+      "changed":"2015-06-12 17:38:52",
+      "expires":"2020-09-14 00:00:00",
+      "dnssec":"unsigned",
+      "registered":true,
+      "status":[
+         "clientUpdateProhibited (https:\/\/www.icann.org\/epp#clientUpdateProhibited)",
+         "clientTransferProhibited (https:\/\/www.icann.org\/epp#clientTransferProhibited)",
+         "clientDeleteProhibited (https:\/\/www.icann.org\/epp#clientDeleteProhibited)",
+         "serverUpdateProhibited (https:\/\/www.icann.org\/epp#serverUpdateProhibited)",
+         "serverTransferProhibited (https:\/\/www.icann.org\/epp#serverTransferProhibited)",
+         "serverDeleteProhibited (https:\/\/www.icann.org\/epp#serverDeleteProhibited)"
+      ],
+      "nameservers":[
+         "ns3.google.com",
+         "ns4.google.com",
+         "ns2.google.com",
+         "ns1.google.com"
+      ],
+      "contacts":{
+         "owner":[
+            {
+               "handle":null,
+               "type":null,
+               "name":"Dns Admin",
+               "organization":"Google Inc.",
+               "email":"dns-admin@google.com",
+               "address":"Please contact contact-admin@google.com, 1600 Amphitheatre Parkway",
+               "zipcode":"94043",
+               "city":"Mountain View",
+               "state":"CA",
+               "country":"US",
+               "phone":"+1.6502530000",
+               "fax":"+1.6506188571",
+               "created":null,
+               "changed":null
+            }
+         ],
+         "admin":[
+            {
+               "handle":null,
+               "type":null,
+               "name":"DNS Admin",
+               "organization":"Google Inc.",
+               "email":"dns-admin@google.com",
+               "address":"1600 Amphitheatre Parkway",
+               "zipcode":"94043",
+               "city":"Mountain View",
+               "state":"CA",
+               "country":"US",
+               "phone":"+1.6506234000",
+               "fax":"+1.6506188571",
+               "created":null,
+               "changed":null
+            }
+         ],
+         "tech":[
+            {
+               "handle":null,
+               "type":null,
+               "name":"DNS Admin",
+               "organization":"Google Inc.",
+               "email":"dns-admin@google.com",
+               "address":"2400 E. Bayshore Pkwy",
+               "zipcode":"94043",
+               "city":"Mountain View",
+               "state":"CA",
+               "country":"US",
+               "phone":"+1.6503300100",
+               "fax":"+1.6506181499",
+               "created":null,
+               "changed":null
+            }
+         ]
+      },
+      "registrar":{
+         "id":"292",
+         "name":"MarkMonitor, Inc.",
+         "email":"abusecomplaints@markmonitor.com",
+         "url":"http:\/\/www.markmonitor.com",
+         "phone":"+1.2083895740"
+      }
+   }
+}</code></pre>
             </div>
 
             <div class="tab-3 tab-content">
-              <pre><code>
-
-etc lol
-function Shape(){
-// this is a comment
-this.name = 'Shape';
-this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-this.name = 'Triangle';
-this.base = base;
-this.height = height;
-this.getArea = function(){return this.base*this.height/2;};
-}
-
-              </code></pre>
+              <pre><code></code></pre>
             </div>
 
           </div>
@@ -520,7 +536,7 @@ this.getArea = function(){return this.base*this.height/2;};
                 cURL
               </li>
               <li class="tab-link" data-tab="tab-3">
-                etc
+                JS
               </li>
             </ul>
           </div>
@@ -551,7 +567,6 @@ this.getArea = function(){return this.base*this.height/2;};
               <div class="feild">
                 <div class="key">
                   <code>url</code>
-                  <p><strong><span class="response -defalt">paramater</span></strong></p>
                 </div>
                 <div class="description">
                   <p>
@@ -589,7 +604,7 @@ this.getArea = function(){return this.base*this.height/2;};
               <div class="feild">
                 <div class="key">
                   <code>height</code>
-                  <p><strong><span class="response -defalt">paramater</span></strong></p>
+                  <p><strong><span class="response -defalt">Optional</span></strong></p>
                 </div>
                 <div class="description">
                   <p>
@@ -626,7 +641,7 @@ this.getArea = function(){return this.base*this.height/2;};
 
             <div class="tab-2 tab-content">
               <pre><code>//api call
-curl 'https://api.parsewhois.com/screenshot?key=YOUR_KEY_HERE&url=example.com&width=1200&height=800'
+curl 'https://api.webcargo.io/screenshot?key=YOUR_KEY_HERE&url=example.com&width=1200&height=800'
 
 //api response
 {
@@ -638,7 +653,7 @@ curl 'https://api.parsewhois.com/screenshot?key=YOUR_KEY_HERE&url=example.com&wi
             <div class="tab-3 tab-content">
               <pre><code>
 
-etc lol
+JS lol
 function Shape(){
 // this is a comment
 this.name = 'Shape';
@@ -686,7 +701,7 @@ this.getArea = function(){return this.base*this.height/2;};
               cURL
             </li>
             <li class="tab-link" data-tab="tab-3">
-              etc
+              JS
             </li>
           </ul>
         </div>
@@ -715,7 +730,6 @@ this.getArea = function(){return this.base*this.height/2;};
             <div class="feild">
               <div class="key">
                 <code>identifier</code>
-                <p><strong><span class="response -defalt">paramater</span></strong></p>
               </div>
               <div class="description">
                 <p>
@@ -729,78 +743,15 @@ this.getArea = function(){return this.base*this.height/2;};
         <div class="method-example">
 
           <div id="" class="tab-1 tab-content current">
-            <pre><code>
-
-PHP LOL
-function Shape(){
-// this is a comment
-this.name = 'Shape';
-this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-this.name = 'Triangle';
-this.base = base;
-this.height = height;
-this.getArea = function(){return this.base*this.height/2;};
-}
-
-            </code></pre>
+            <pre><code>//coming soon</code></pre>
           </div>
 
           <div class="tab-2 tab-content">
-            <pre><code>
-
-cURL lol
-function Shape(){
-// this is a comment
-this.name = 'Shape';
-this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-this.name = 'Triangle';
-this.base = base;
-this.height = height;
-this.getArea = function(){return this.base*this.height/2;};
-}
-
-            </code></pre>
+            <pre><code>//coming soon</code></pre>
           </div>
 
           <div class="tab-3 tab-content">
-            <pre><code>
-
-etc lol
-function Shape(){
-// this is a comment
-this.name = 'Shape';
-this.toString = function(){return this.name;};
-}
-
-
-function Shape2D(){
-this.name = 'Shape 2D';
-}
-
-function Triangle(base,height){
-this.name = 'Triangle';
-this.base = base;
-this.height = height;
-this.getArea = function(){return this.base*this.height/2;};
-}
-
-            </code></pre>
+            <pre><code>//coming soon</code></pre>
           </div>
 
         </div>
@@ -830,7 +781,7 @@ this.getArea = function(){return this.base*this.height/2;};
             cURL
           </li>
           <li class="tab-link" data-tab="tab-3">
-            etc
+            JS
           </li>
         </ul>
       </div>
@@ -880,7 +831,7 @@ this.getArea = function(){return this.base*this.height/2;};
 
         <div class="tab-2 tab-content">
           <pre><code>//api call
-curl 'https://api.parsewhois.com/availability?key=YOUR_KEY_HERE&domain=parsewhois.com'
+curl 'https://api.webcargo.io/availability?key=YOUR_KEY_HERE&domain=webcargo.io'
 
 //api response
 {
@@ -891,7 +842,7 @@ curl 'https://api.parsewhois.com/availability?key=YOUR_KEY_HERE&domain=parsewhoi
         <div class="tab-3 tab-content">
           <pre><code>
 
-etc lol
+JS lol
 function Shape(){
 // this is a comment
 this.name = 'Shape';
@@ -941,7 +892,7 @@ this.getArea = function(){return this.base*this.height/2;};
           cURL
         </li>
         <li class="tab-link" data-tab="tab-3">
-          etc
+          JS
         </li>
       </ul>
     </div>
